@@ -1,0 +1,78 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "#": "minecraft:cyan_wool",
+    "A": "minecraft:blue_wool",
+    "B": "minecraft:oak_planks",
+    "C": "minecraft:netherrack"
+  },
+  "pattern": [
+    " C ",
+    "B#B",
+    " A "
+  ],
+  "result": {
+    "components": {
+      "minecraft:profile": {
+        "properties": [
+          {
+            "name": "textures",
+            "value": "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNTFiNWM4ZTI3ZGI4MmY2NWE4NTYxY2ZhYThhYmQ1ODYyYmY4MDMyNDZlODc2OTI4OGFkMTY2N2E0ZjBkZTA1NiJ9fX0="
+          }
+        ]
+      },
+      "minecraft:attribute_modifiers": [
+        {
+          "type": "minecraft:block_interaction_range",
+          "id": "block_interaction_range",
+          "amount": -5,
+          "operation": "add_multiplied_total",
+          "slot": "hand"
+        }
+      ],
+      "minecraft:tooltip_display": {
+        "hidden_components": [
+          "minecraft:attribute_modifiers"
+        ]
+      },
+      "minecraft:equippable": {
+        "slot": "chest",
+        "equip_sound": "minecraft:ui.cartography_table.take_result",
+        "allowed_entities": "minecraft:armor_stand"
+      },
+      "minecraft:custom_data": {
+        "deco": true,
+        "deco_id": "fake_herobrine",
+        "deco_width": 1.0,
+        "deco_height": 2.0
+      },
+      "minecraft:custom_name": {
+        "text": "Fake Herobrine Decoration",
+        "color": "#ffbf00",
+        "bold": false,
+        "italic": false
+      },
+      "minecraft:lore": [
+        [
+          {
+            "text": "Model by Mastay",
+            "color": "dark_gray",
+            "bold": false,
+            "italic": false
+          }
+        ],
+        [
+          {
+            "text": "bde.gg/b/28619",
+            "color": "dark_gray",
+            "bold": false,
+            "italic": false
+          }
+        ]
+      ]
+    },
+    "count": 1,
+    "id": "minecraft:player_head"
+  },
+  "show_notification": false
+}

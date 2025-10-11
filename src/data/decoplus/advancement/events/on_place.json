@@ -1,0 +1,47 @@
+{
+	"criteria": {
+		"place": {
+			"trigger": "minecraft:player_interacted_with_entity",
+			"conditions": {
+				"item": {
+					"predicates": {
+						"minecraft:custom_data": {
+							"deco": true
+						}
+					}
+				},
+				"entity": {
+					"type": "minecraft:armor_stand",
+					"equipment": {
+						"mainhand": {
+							"items": "minecraft:air"
+						},
+						"offhand": {
+							"items": "minecraft:air"
+						},
+						"head": {
+							"items": "minecraft:air"
+						},
+						"legs": {
+							"items": "minecraft:air"
+						},
+						"feet": {
+							"items": "minecraft:air"
+						},
+						"body": {
+							"items": "minecraft:air"
+						}
+					}
+				}
+			}
+		}
+	},
+	"requirements": [
+		[
+			"place"
+		]
+	],
+	"rewards": {
+		"function": "decoplus:event_listeners/on_place"
+	}
+}

@@ -1,0 +1,1 @@
+tellraw @a [{text:"Removed ",color:"yellow"},{score:{name:"count",objective:"decoplus.old"},color:"red"},{text:" old decorations!",color:"yellow"}]

@@ -1,7 +1,7 @@
 import shutil
 from pathlib import Path
 
-DESTINATION_PATH = r"C:\Users\owner\AppData\Roaming\PrismLauncher\instances\1.21.9 v2\minecraft\saves\New World\datapacks\dp2"
+DESTINATION_PATH = r"C:\Users\owner\AppData\Roaming\PrismLauncher\instances\1.21.10\minecraft\saves\New World\datapacks\hd"
 
 def main():
     src_dir = Path(__file__).parent.parent / "src"

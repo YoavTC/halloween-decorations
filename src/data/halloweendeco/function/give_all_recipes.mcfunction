@@ -8,3 +8,6 @@ recipe give @a halloweendeco:soul_skull
 recipe give @a halloweendeco:halloween_cart
 recipe give @a halloweendeco:enchanting_books
 recipe give @a halloweendeco:scarecrow
+recipe give @a halloweendeco:bloody_sword
+recipe give @a halloweendeco:bloody_axe
+recipe give @a halloweendeco:bloody_pickaxe

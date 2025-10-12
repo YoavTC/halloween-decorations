@@ -1,0 +1,77 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:player_head",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:profile": {
+                  "properties": [
+                    {
+                      "name": "textures",
+                      "value": "ewogICJ0aW1lc3RhbXAiIDogMTc2MDI3NTQ0ODgxMywKICAicHJvZmlsZUlkIiA6ICIzZDU1OGQ3Y2NmZjk0ODdkYWE1MzhkMjM4NGE3OWFkZCIsCiAgInByb2ZpbGVOYW1lIiA6ICJDcnlwdGljTG9zZXIxMyIsCiAgInNpZ25hdHVyZVJlcXVpcmVkIiA6IHRydWUsCiAgInRleHR1cmVzIiA6IHsKICAgICJTS0lOIiA6IHsKICAgICAgInVybCIgOiAiaHR0cDovL3RleHR1cmVzLm1pbmVjcmFmdC5uZXQvdGV4dHVyZS9mNTZlMjc2MTQwMGE3M2EyY2VkNTkxOTQ4YWIyYTViYzIxZjViMjNiNDI0ZDRiNzU0ZGI1OTM5N2ZlMDEzZTZjIgogICAgfQogIH0KfQ=="
+                    }
+                  ]
+                },
+                "minecraft:attribute_modifiers": [
+                  {
+                    "type": "minecraft:block_interaction_range",
+                    "id": "block_interaction_range",
+                    "amount": -5,
+                    "operation": "add_multiplied_total",
+                    "slot": "hand"
+                  }
+                ],
+                "minecraft:tooltip_display": {
+                  "hidden_components": [
+                    "minecraft:attribute_modifiers"
+                  ]
+                },
+                "minecraft:equippable": {
+                  "slot": "chest",
+                  "equip_sound": "minecraft:ui.cartography_table.take_result",
+                  "allowed_entities": "minecraft:armor_stand"
+                },
+                "minecraft:custom_data": {
+                  "deco": true,
+                  "deco_id": "bloody_pickaxe",
+                  "deco_width": 0.5,
+                  "deco_height": 0.5
+                },
+                "minecraft:custom_name": {
+                  "text": "Bloody Pickaxe Decoration",
+                  "color": "#ffbf00",
+                  "bold": false,
+                  "italic": false
+                },
+                "minecraft:lore": [
+                  [
+                    {
+                      "text": "Model by BlueBlueBlood",
+                      "color": "dark_gray",
+                      "bold": false,
+                      "italic": false
+                    }
+                  ],
+                  [
+                    {
+                      "text": "bde.gg/b/10522",
+                      "color": "dark_gray",
+                      "bold": false,
+                      "italic": false
+                    }
+                  ]
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

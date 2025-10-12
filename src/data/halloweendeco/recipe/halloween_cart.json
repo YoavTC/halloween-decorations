@@ -1,12 +1,16 @@
 {
   "type": "minecraft:crafting_shaped",
   "key": {
-    "#": "minecraft:iron_chain",
-    "A": "minecraft:pumpkin"
+    "#": "minecraft:spruce_slab",
+    "A": "minecraft:pumpkin_pie",
+    "B": "minecraft:carved_pumpkin",
+    "C": "minecraft:cake",
+    "D": "minecraft:spruce_planks"
   },
   "pattern": [
-    " # ",
-    " A "
+    "###",
+    "ABC",
+    "D D"
   ],
   "result": {
     "components": {
@@ -14,7 +18,7 @@
         "properties": [
           {
             "name": "textures",
-            "value": "ewogICJ0aW1lc3RhbXAiIDogMTY5ODQ0Mzk1NzY2NiwKICAicHJvZmlsZUlkIiA6ICJiOThjNGFkOGM2MjY0NGYxOWUzYzhhZTE0ZThhMDI1OSIsCiAgInByb2ZpbGVOYW1lIiA6ICJsdXZzbWFkcyIsCiAgInNpZ25hdHVyZVJlcXVpcmVkIiA6IHRydWUsCiAgInRleHR1cmVzIiA6IHsKICAgICJTS0lOIiA6IHsKICAgICAgInVybCIgOiAiaHR0cDovL3RleHR1cmVzLm1pbmVjcmFmdC5uZXQvdGV4dHVyZS8zMGYyYTBmN2UyMjEwNzYxOWU2ZmFhNDY4MTdmNzU3NzhmZGMxMjQ0MTYyMDgwOGUyYjU3N2NjYTk0Y2Y3ZjFhIiwKICAgICAgIm1ldGFkYXRhIiA6IHsKICAgICAgICAibW9kZWwiIDogInNsaW0iCiAgICAgIH0KICAgIH0KICB9Cn0="
+            "value": "ewogICJ0aW1lc3RhbXAiIDogMTc2MDI2OTM4NTE5NywKICAicHJvZmlsZUlkIiA6ICJkYjQwYmNjNWUzMDE0ZmZjOGVlOWQxNDU5MTcyYjdhNCIsCiAgInByb2ZpbGVOYW1lIiA6ICJhWGUxOCIsCiAgInNpZ25hdHVyZVJlcXVpcmVkIiA6IHRydWUsCiAgInRleHR1cmVzIiA6IHsKICAgICJTS0lOIiA6IHsKICAgICAgInVybCIgOiAiaHR0cDovL3RleHR1cmVzLm1pbmVjcmFmdC5uZXQvdGV4dHVyZS83MzkxNTViMDczN2ZhNjBjNzJmMjQ1YjMxNGI4N2M4NzA4YmQzNzg2ZGU0YjNlMzZhY2JlNTcyNjRlNTg0NjBjIgogICAgfQogIH0KfQ=="
           }
         ]
       },
@@ -39,12 +43,12 @@
       },
       "minecraft:custom_data": {
         "deco": true,
-        "deco_id": "pumpkin_box",
-        "deco_width": 1.0,
-        "deco_height": 1.0
+        "deco_id": "halloween_cart",
+        "deco_width": 3.0,
+        "deco_height": 3.0
       },
       "minecraft:custom_name": {
-        "text": "Pumpkin Box Decoration",
+        "text": "Halloween Cart Decoration",
         "color": "#ffbf00",
         "bold": false,
         "italic": false
@@ -52,7 +56,7 @@
       "minecraft:lore": [
         [
           {
-            "text": "Model by __ZolMik__",
+            "text": "Model by Daniya",
             "color": "dark_gray",
             "bold": false,
             "italic": false
@@ -60,7 +64,7 @@
         ],
         [
           {
-            "text": "bde.gg/b/21403",
+            "text": "bde.gg/b/5025",
             "color": "dark_gray",
             "bold": false,
             "italic": false

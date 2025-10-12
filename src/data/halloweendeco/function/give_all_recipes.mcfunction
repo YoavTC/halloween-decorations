@@ -5,3 +5,4 @@ recipe give @a halloweendeco:wood_grave
 recipe give @a halloweendeco:zombie_corpse
 recipe give @a halloweendeco:skeleton_corpse
 recipe give @a halloweendeco:soul_skull
+recipe give @a halloweendeco:halloween_cart

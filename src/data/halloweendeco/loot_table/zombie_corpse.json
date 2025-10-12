@@ -14,7 +14,7 @@
                   "properties": [
                     {
                       "name": "textures",
-                      "value": "ewogICJ0aW1lc3RhbXAiIDogMTc2MDI1Mzc1NzcyNiwKICAicHJvZmlsZUlkIiA6ICI2M2VkZjY1ZDcxNmE0NGZmYmUzOWU5MWVkMmNiMjM3YyIsCiAgInByb2ZpbGVOYW1lIiA6ICJ2aWxlX3NsYXZlbWFzdGVyIiwKICAic2lnbmF0dXJlUmVxdWlyZWQiIDogdHJ1ZSwKICAidGV4dHVyZXMiIDogewogICAgIlNLSU4iIDogewogICAgICAidXJsIiA6ICJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlL2I5ODA3NDI1YTMyYTZjMTdmYTc3MWVkYzMyYmI5MDk5MzA4YzljYzNkZThkOTQwNWRjZmU4NGJhOWQzZmJiYjAiCiAgICB9CiAgfQp9"
+                      "value": "ewogICJ0aW1lc3RhbXAiIDogMTc2MDE0NTYyMDY5MCwKICAicHJvZmlsZUlkIiA6ICI1MWI4MjcxNDE5YWE0NDA5YTFhNmU1OTcwYTc1MzgyNSIsCiAgInByb2ZpbGVOYW1lIiA6ICJYRHJha2U5OSIsCiAgInNpZ25hdHVyZVJlcXVpcmVkIiA6IHRydWUsCiAgInRleHR1cmVzIiA6IHsKICAgICJTS0lOIiA6IHsKICAgICAgInVybCIgOiAiaHR0cDovL3RleHR1cmVzLm1pbmVjcmFmdC5uZXQvdGV4dHVyZS9hM2U4ODVhM2Y2NWQwZGRjZWFjMDZjMWQ3N2NkYzkwZTYxNGRmYjE4MGRiNGQyMGU0MDgyYmZlN2JjZGJjODBlIgogICAgfQogIH0KfQ=="
                     }
                   ]
                 },
@@ -39,12 +39,12 @@
                 },
                 "minecraft:custom_data": {
                   "deco": true,
-                  "deco_id": "pumpkin_garland",
-                  "deco_width": 1.0,
-                  "deco_height": 1.0
+                  "deco_id": "zombie_corpse",
+                  "deco_width": 2.0,
+                  "deco_height": 0.5
                 },
                 "minecraft:custom_name": {
-                  "text": "Pumpkin Garland Decoration",
+                  "text": "Zombie Corpse Decoration",
                   "color": "#ffbf00",
                   "bold": false,
                   "italic": false
@@ -52,7 +52,7 @@
                 "minecraft:lore": [
                   [
                     {
-                      "text": "Model by __ZolMik__",
+                      "text": "Model by Muldek",
                       "color": "dark_gray",
                       "bold": false,
                       "italic": false
@@ -60,7 +60,7 @@
                   ],
                   [
                     {
-                      "text": "bde.gg/b/21904",
+                      "text": "bde.gg/b/39589",
                       "color": "dark_gray",
                       "bold": false,
                       "italic": false

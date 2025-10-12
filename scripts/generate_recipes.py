@@ -206,11 +206,11 @@ def main():
     project_root = os.path.dirname(script_dir)
     
     csv_file = os.path.join(script_dir, 'items.csv')
-    recipe_output_dir = os.path.join(project_root, 'src', 'data', 'decoplus', 'recipe')
-    loot_table_output_dir = os.path.join(project_root, 'src', 'data', 'decoplus', 'loot_table')
-    function_output_dir = os.path.join(project_root, 'src', 'data', 'decoplus', 'function')
-    spawn_function_dir = os.path.join(project_root, 'src', 'data', 'decoplus', 'function', 'spawn')
-    original_recipe_dir = os.path.join(project_root, 'src', 'data', 'decoplus', 'recipe')
+    recipe_output_dir = os.path.join(project_root, 'src', 'data', 'halloweendeco', 'recipe')
+    loot_table_output_dir = os.path.join(project_root, 'src', 'data', 'halloweendeco', 'loot_table')
+    function_output_dir = os.path.join(project_root, 'src', 'data', 'halloweendeco', 'function')
+    spawn_function_dir = os.path.join(project_root, 'src', 'data', 'halloweendeco', 'function', 'spawn')
+    original_recipe_dir = os.path.join(project_root, 'src', 'data', 'halloweendeco', 'recipe')
     
     # Create output directories
     os.makedirs(recipe_output_dir, exist_ok=True)
@@ -269,7 +269,7 @@ def main():
     mcfunction_file = os.path.join(function_output_dir, 'give_all_recipes.mcfunction')
     with open(mcfunction_file, 'w', encoding='utf-8') as f:
         for recipe_id in recipe_ids:
-            f.write(f'recipe give @a decoplus:{recipe_id}\n')
+            f.write(f'recipe give @a halloweendeco:{recipe_id}\n')
     
     print(f'Generated: give_all_recipes.mcfunction')
     print(f'\nRecipes generated in: {recipe_output_dir}')

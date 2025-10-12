@@ -2,14 +2,14 @@
 $summon interaction ~ ~ ~ {width:0,height:0,Tags:[deco_origin],data:{deco_id:$(deco_id)}}
 
 # Spawn deco model & hitbox
-$function decoplus:spawn/$(deco_id)
+$function halloweendeco:spawn/$(deco_id)
 $summon interaction ~ ~ ~ {width:$(deco_width),height:$(deco_height),Tags:[deco_triggerbox]}
 
 # Rotate deco
 execute as @e[type=!player,type=!minecraft:armor_stand,distance=..1.2] positioned as @s facing entity @p feet run rotate @s ~ 0
 
 # Remove armor stand
-kill @n[type=armor_stand,predicate=decoplus:is_wearing_deco]
+kill @n[type=armor_stand,predicate=halloweendeco:is_wearing_deco]
 
 # Tag all of the model entities
 execute as @n[tag=deco_parent,distance=..2] on passengers run tag @s add deco_part

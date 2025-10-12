@@ -16,6 +16,6 @@
 		]
 	],
 	"rewards": {
-		"function": "decoplus:event_listeners/on_hurt"
+		"function": "halloweendeco:event_listeners/on_hurt"
 	}
 }

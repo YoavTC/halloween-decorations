@@ -1,1 +1,0 @@
-schedule function decoplus:give_all_recipes 5s

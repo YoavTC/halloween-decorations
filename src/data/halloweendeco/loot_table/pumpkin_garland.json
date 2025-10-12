@@ -1,0 +1,77 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:player_head",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:profile": {
+                  "properties": [
+                    {
+                      "name": "textures",
+                      "value": "ewogICJ0aW1lc3RhbXAiIDogMTc2MDI1Mzc1NzcyNiwKICAicHJvZmlsZUlkIiA6ICI2M2VkZjY1ZDcxNmE0NGZmYmUzOWU5MWVkMmNiMjM3YyIsCiAgInByb2ZpbGVOYW1lIiA6ICJ2aWxlX3NsYXZlbWFzdGVyIiwKICAic2lnbmF0dXJlUmVxdWlyZWQiIDogdHJ1ZSwKICAidGV4dHVyZXMiIDogewogICAgIlNLSU4iIDogewogICAgICAidXJsIiA6ICJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlL2I5ODA3NDI1YTMyYTZjMTdmYTc3MWVkYzMyYmI5MDk5MzA4YzljYzNkZThkOTQwNWRjZmU4NGJhOWQzZmJiYjAiCiAgICB9CiAgfQp9"
+                    }
+                  ]
+                },
+                "minecraft:attribute_modifiers": [
+                  {
+                    "type": "minecraft:block_interaction_range",
+                    "id": "block_interaction_range",
+                    "amount": -5,
+                    "operation": "add_multiplied_total",
+                    "slot": "hand"
+                  }
+                ],
+                "minecraft:tooltip_display": {
+                  "hidden_components": [
+                    "minecraft:attribute_modifiers"
+                  ]
+                },
+                "minecraft:equippable": {
+                  "slot": "chest",
+                  "equip_sound": "minecraft:ui.cartography_table.take_result",
+                  "allowed_entities": "minecraft:armor_stand"
+                },
+                "minecraft:custom_data": {
+                  "deco": true,
+                  "deco_id": "pumpkin_garland",
+                  "deco_width": 1.0,
+                  "deco_height": 1.0
+                },
+                "minecraft:custom_name": {
+                  "text": "Pumpkin Garland Decoration",
+                  "color": "#ffbf00",
+                  "bold": false,
+                  "italic": false
+                },
+                "minecraft:lore": [
+                  [
+                    {
+                      "text": "Model by __ZolMik__",
+                      "color": "dark_gray",
+                      "bold": false,
+                      "italic": false
+                    }
+                  ],
+                  [
+                    {
+                      "text": "bde.gg/b/21904",
+                      "color": "dark_gray",
+                      "bold": false,
+                      "italic": false
+                    }
+                  ]
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

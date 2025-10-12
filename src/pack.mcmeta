@@ -2,10 +2,20 @@
 	"pack": {
 		"description": [
 			{
-				"text": "Made by Yoav TC\n",
+				"text": "Made by Yoav TC & Ohad Dori\n",
 				"color": "dark_gray"
 			},
 			{
+				"text": "www.yoavtc.work",
+				"color": "blue",
+				"underlined": true
+			},
+			{
+				"text": " | ",
+				"color": "gray",
+				"underlined": true
+			}
+			,{
 				"text": "www.yoavtc.work",
 				"color": "blue",
 				"underlined": true

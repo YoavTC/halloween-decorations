@@ -42,6 +42,6 @@
 		]
 	],
 	"rewards": {
-		"function": "decoplus:event_listeners/on_place"
+		"function": "halloweendeco:event_listeners/on_place"
 	}
 }

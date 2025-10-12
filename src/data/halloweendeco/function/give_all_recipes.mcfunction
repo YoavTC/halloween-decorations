@@ -6,3 +6,4 @@ recipe give @a halloweendeco:zombie_corpse
 recipe give @a halloweendeco:skeleton_corpse
 recipe give @a halloweendeco:soul_skull
 recipe give @a halloweendeco:halloween_cart
+recipe give @a halloweendeco:enchanting_books

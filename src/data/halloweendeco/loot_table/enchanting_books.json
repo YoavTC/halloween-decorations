@@ -1,0 +1,77 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:player_head",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:profile": {
+                  "properties": [
+                    {
+                      "name": "textures",
+                      "value": "ewogICJ0aW1lc3RhbXAiIDogMTczODY4NTQwMzU5OSwKICAicHJvZmlsZUlkIiA6ICI3N2ZhNWZhYTJlMWY0MjQyYmJiYTBiMGE2Nzc3NGJmYSIsCiAgInByb2ZpbGVOYW1lIiA6ICJfU2F5SUxvdmVZb3VfIiwKICAic2lnbmF0dXJlUmVxdWlyZWQiIDogdHJ1ZSwKICAidGV4dHVyZXMiIDogewogICAgIlNLSU4iIDogewogICAgICAidXJsIiA6ICJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlL2Q1NjEwYjNmYTc5NWJhOTM5MDE4MWRkMjVhZWY5ODEzYjE0MzcxOTEzODA4YTNjODA4Y2MzZmYzYTgzZmRmYTYiCiAgICB9CiAgfQp9"
+                    }
+                  ]
+                },
+                "minecraft:attribute_modifiers": [
+                  {
+                    "type": "minecraft:block_interaction_range",
+                    "id": "block_interaction_range",
+                    "amount": -5,
+                    "operation": "add_multiplied_total",
+                    "slot": "hand"
+                  }
+                ],
+                "minecraft:tooltip_display": {
+                  "hidden_components": [
+                    "minecraft:attribute_modifiers"
+                  ]
+                },
+                "minecraft:equippable": {
+                  "slot": "chest",
+                  "equip_sound": "minecraft:ui.cartography_table.take_result",
+                  "allowed_entities": "minecraft:armor_stand"
+                },
+                "minecraft:custom_data": {
+                  "deco": true,
+                  "deco_id": "enchanting_books",
+                  "deco_width": 0.5,
+                  "deco_height": 0.5
+                },
+                "minecraft:custom_name": {
+                  "text": "Enchanting Books Decoration",
+                  "color": "#ffbf00",
+                  "bold": false,
+                  "italic": false
+                },
+                "minecraft:lore": [
+                  [
+                    {
+                      "text": "Model by HaniVindinggame",
+                      "color": "dark_gray",
+                      "bold": false,
+                      "italic": false
+                    }
+                  ],
+                  [
+                    {
+                      "text": "bde.gg/b/39963",
+                      "color": "dark_gray",
+                      "bold": false,
+                      "italic": false
+                    }
+                  ]
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

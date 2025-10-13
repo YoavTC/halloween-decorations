@@ -12,3 +12,4 @@ recipe give @a halloweendeco:bloody_sword
 recipe give @a halloweendeco:bloody_axe
 recipe give @a halloweendeco:bloody_pickaxe
 recipe give @a halloweendeco:skull_in_jar
+recipe give @a halloweendeco:poison_bottle

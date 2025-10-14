@@ -39,6 +39,44 @@ def recipe_output_to_loot_table(recipe_data):
     }
     return loot_table
 
+def create_advancement_json(item_id):
+    """
+    Creates an advancement JSON for player block place events.
+    """
+    advancement = {
+        "parent": "halloweendeco:events/on_deco_block_place",
+        "criteria": {
+            "place": {
+                "trigger": "minecraft:placed_block",
+                "conditions": {
+                    "location": [
+                        {
+                            "condition": "minecraft:location_check",
+                            "predicate": {
+                                "block": {
+                                    "blocks": "#halloweendeco:player_head",
+                                    "nbt": f"{{components:{{\"minecraft:custom_data\":{{deco_id:\"{item_id}\"}}}}}}"
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        "requirements": [
+            [
+                "place"
+            ]
+        ],
+        "rewards": {
+            "function": "halloweendeco:event_listeners/on_deco_block_place",
+            "loot": [
+                f"halloweendeco:{item_id}"
+            ]
+        }
+    }
+    return advancement
+
 def load_original_keys(item_id, original_recipe_dir):
     """Load the original key mappings, custom name, and deco_id from existing recipe file"""
     original_file = os.path.join(original_recipe_dir, f'{item_id}.json')
@@ -208,6 +246,7 @@ def main():
     csv_file = os.path.join(script_dir, 'items.csv')
     recipe_output_dir = os.path.join(project_root, 'src', 'data', 'halloweendeco', 'recipe')
     loot_table_output_dir = os.path.join(project_root, 'src', 'data', 'halloweendeco', 'loot_table')
+    advancement_output_dir = os.path.join(project_root, 'src', 'data', 'halloweendeco', 'advancement', 'events', 'player_block_place')
     function_output_dir = os.path.join(project_root, 'src', 'data', 'halloweendeco', 'function')
     spawn_function_dir = os.path.join(project_root, 'src', 'data', 'halloweendeco', 'function', 'spawn')
     original_recipe_dir = os.path.join(project_root, 'src', 'data', 'halloweendeco', 'recipe')
@@ -215,6 +254,7 @@ def main():
     # Create output directories
     os.makedirs(recipe_output_dir, exist_ok=True)
     os.makedirs(loot_table_output_dir, exist_ok=True)
+    os.makedirs(advancement_output_dir, exist_ok=True)
     os.makedirs(function_output_dir, exist_ok=True)
     os.makedirs(spawn_function_dir, exist_ok=True)
     
@@ -253,6 +293,14 @@ def main():
             with open(loot_table_output_file, 'w', encoding='utf-8') as out_f:
                 json.dump(loot_table, out_f, indent=2, ensure_ascii=False)
             
+            # Generate advancement from item_id
+            advancement = create_advancement_json(item_id)
+            
+            # Write advancement to file
+            advancement_output_file = os.path.join(advancement_output_dir, f'{item_id}.json')
+            with open(advancement_output_file, 'w', encoding='utf-8') as out_f:
+                json.dump(advancement, out_f, indent=2, ensure_ascii=False)
+            
             # Generate spawn function file if it doesn't exist
             spawn_function_file = os.path.join(spawn_function_dir, f'{item_id}.mcfunction')
             if not os.path.exists(spawn_function_file):
@@ -263,7 +311,7 @@ def main():
             # Add to recipe IDs list
             recipe_ids.append(item_id)
             
-            print(f'Generated: {item_id}.json (recipe and loot table)')
+            print(f'Generated: {item_id}.json (recipe, loot table, and advancement)')
     
     # Generate grant_all_recipes.mcfunction file
     mcfunction_file = os.path.join(function_output_dir, 'give_all_recipes.mcfunction')
@@ -274,6 +322,7 @@ def main():
     print(f'Generated: give_all_recipes.mcfunction')
     print(f'\nRecipes generated in: {recipe_output_dir}')
     print(f'Loot tables generated in: {loot_table_output_dir}')
+    print(f'Advancements generated in: {advancement_output_dir}')
     print(f'Spawn functions generated in: {spawn_function_dir}')
     print(f'Function generated in: {function_output_dir}')
     

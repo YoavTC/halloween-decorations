@@ -1,0 +1,32 @@
+{
+  "parent": "halloweendeco:events/on_deco_block_place",
+  "criteria": {
+    "place": {
+      "trigger": "minecraft:placed_block",
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "blocks": "#halloweendeco:player_head",
+                "nbt": "{components:{\"minecraft:custom_data\":{deco_id:\"stone_grave\"}}}"
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "place"
+    ]
+  ],
+  "rewards": {
+    "function": "halloweendeco:event_listeners/on_deco_block_place",
+    "loot": [
+      "halloweendeco:stone_grave"
+    ]
+  }
+}

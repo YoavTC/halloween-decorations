@@ -15,3 +15,4 @@ recipe give @a halloweendeco:skull_in_jar
 recipe give @a halloweendeco:poison_bottle
 recipe give @a halloweendeco:raven
 recipe give @a halloweendeco:mummy
+recipe give @a halloweendeco:witch_pot

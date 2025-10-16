@@ -20,3 +20,4 @@ recipe give @a halloweendeco:spine
 recipe give @a halloweendeco:pumpkin_monster
 recipe give @a halloweendeco:spider
 recipe give @a halloweendeco:broom
+recipe give @a halloweendeco:candy_pumpkin

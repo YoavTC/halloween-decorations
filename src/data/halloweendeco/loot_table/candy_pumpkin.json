@@ -1,0 +1,77 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:player_head",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:profile": {
+                  "properties": [
+                    {
+                      "name": "textures",
+                      "value": "ewogICJ0aW1lc3RhbXAiIDogMTcyOTY1MjUyNTAyNywKICAicHJvZmlsZUlkIiA6ICI1MDMyYTA2NWQ5MWQ0NTgyYjZmODM0MDRlMGYyOTA4MiIsCiAgInByb2ZpbGVOYW1lIiA6ICJNYWNCb29rUHJvTTIiLAogICJzaWduYXR1cmVSZXF1aXJlZCIgOiB0cnVlLAogICJ0ZXh0dXJlcyIgOiB7CiAgICAiU0tJTiIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTIzNDc2MjJkM2NiMDNkOTk4MGRhOTYwZDNhNmM3MGY3NGIyMjc0MzhhYzdiNzA2NjhlOTc2NTllNDhlYTUzYyIsCiAgICAgICJtZXRhZGF0YSIgOiB7CiAgICAgICAgIm1vZGVsIiA6ICJzbGltIgogICAgICB9CiAgICB9CiAgfQp9"
+                    }
+                  ]
+                },
+                "minecraft:attribute_modifiers": [
+                  {
+                    "type": "minecraft:block_interaction_range",
+                    "id": "block_interaction_range",
+                    "amount": -5,
+                    "operation": "add_multiplied_total",
+                    "slot": "hand"
+                  }
+                ],
+                "minecraft:tooltip_display": {
+                  "hidden_components": [
+                    "minecraft:attribute_modifiers"
+                  ]
+                },
+                "minecraft:equippable": {
+                  "slot": "chest",
+                  "equip_sound": "minecraft:ui.cartography_table.take_result",
+                  "allowed_entities": "minecraft:armor_stand"
+                },
+                "minecraft:custom_data": {
+                  "deco": true,
+                  "deco_id": "candy_pumpkin",
+                  "deco_width": 1.0,
+                  "deco_height": 1.0
+                },
+                "minecraft:custom_name": {
+                  "text": "Candy Pumpkin Decoration",
+                  "color": "#ffbf00",
+                  "bold": false,
+                  "italic": false
+                },
+                "minecraft:lore": [
+                  [
+                    {
+                      "text": "Model by GumbarioGuizer",
+                      "color": "dark_gray",
+                      "bold": false,
+                      "italic": false
+                    }
+                  ],
+                  [
+                    {
+                      "text": "bde.gg/b/21446",
+                      "color": "dark_gray",
+                      "bold": false,
+                      "italic": false
+                    }
+                  ]
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

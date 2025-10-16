@@ -39,12 +39,12 @@
                 },
                 "minecraft:custom_data": {
                   "deco": true,
-                  "deco_id": "pumpkin_box",
+                  "deco_id": "candy_bucket",
                   "deco_width": 1.0,
                   "deco_height": 1.0
                 },
                 "minecraft:custom_name": {
-                  "text": "Pumpkin Box Decoration",
+                  "text": "Candy Bucket Decoration",
                   "color": "#ffbf00",
                   "bold": false,
                   "italic": false

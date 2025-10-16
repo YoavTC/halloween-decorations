@@ -3,259 +3,185 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Decorations Plus Datapack Wiki</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            min-height: 100vh;
-            /* background-color: #f4f4f4; */
-        }
-        .grid-container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 20px;
-            padding: 20px;
-            max-width: 1700px;
-            margin: auto;
-            width: 100%;
-        }
-        .grid-item {
-            /* background: #fff; */
-            border: 1px solid #ddd;
-            border-radius: 8px;
-            overflow: hidden;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            text-align: center;
-            transition: all 0.3s ease-in-out;
-        }
-        .grid-item:hover {
-            box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
-            scale: 1.05;
-            transition: all 0.3s ease-in-out;
-        }
-        .grid-item img {
-            width: 100%;
-            height: auto;
-        }
-        .grid-item h3 {
-            margin: 10px 0 0px;
-            font-size: 18px;
-        }
-        .grid-item a {
-            color: #3aaec5;
-            font-size: 14px;
-            text-decoration: none;
-            margin: 10px;
-            display: inline-block;
-        }
-        .grid-item a:hover {
-            color: #103b43;
-        }
-        .grid-item a:visited {
-            color: #3aaec5;
-        }
-        .grid-item a:active {
-            color: #22879b;
-        }
-        /* Modal styles */
-        .modal {
-            display: none;
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0, 0, 0, 0.8);
-            justify-content: center;
-            align-items: center;
-            z-index: 1000;
-        }
-        .modal img {
-            /* max-width: 90%;
-            max-height: 90%; */
-            width: 50%;
-            border-radius: 8px;
-        }
-        .modal-close {
-            position: absolute;
-            top: 20px;
-            right: 50px;
-            font-size: 124px;
-            color: white;
-            cursor: pointer;
-        }
-    </style>
+    <title>Halloween Decorations Datapack Wiki</title>
+    <link href="styles.css" rel="stylesheet">
 </head>
 <body>
-    <h1 style="text-align: center; margin-bottom: 20px;">Decorations Plus Datapack Wiki</h1> <br>
-    <div class="grid-container">
-        <div class="grid-item" style="background-color: #cde98c;">
-            <img onclick="openModal(this)" src="recipe images/bamboo flower cart recipe.png">
-            <h3>Bamboo Flower Cart</h3>
-            <a target="_blank" href="https://bde.gg/u/daftcraft/">@DaftCraftYT</a>
-        </div>
-        <div class="grid-item" style="background-color: #f6d43d;">
-            <img onclick="openModal(this)" src="recipe images/caution sign recipe.png">
-            <h3>Caution Sign</h3>
-            <a target="_blank" href="https://bde.gg/u/almazar/">@AlmazAr3</a>
-        </div>
-        <div class="grid-item" style="background-color: #963df6;">
-            <img onclick="openModal(this)" src="recipe images/controller recipe.png">
-            <h3>Controller</h3>
-            <a target="_blank" href="https://bde.gg/u/daftcraft/">@DaftCraftYT</a>
-        </div>
-        <div class="grid-item" style="background-color: #d1a952;">
-            <img onclick="openModal(this)" src="recipe images/cookie oven recipe.png">
-            <h3>Cookie Oven</h3>
-            <a target="_blank" href="https://bde.gg/u/bom2u">@Bom2u</a>
-        </div>
-        <div class="grid-item" style="background-color: #816548;">
-            <img onclick="openModal(this)" src="recipe images/fire log pile recipe.png">
-            <h3>Fire Log Pile</h3>
-            <a target="_blank" href="https://bde.gg/u/goodentity">@HappyWaffle5897</a>
-        </div>
-        <div class="grid-item" style="background-color: #ad3c3c;">
-            <img onclick="openModal(this)" src="recipe images/firework small box recipe.png">
-            <h3>Firework Small Box</h3>
-            <a target="_blank" href="https://block-display.com/author/c37800efb0c16751d102d9c0d0d044ce/">@yersacaltara</a>
-        </div>
-        <div class="grid-item" style="background-color: #445a3d;">
-            <img onclick="openModal(this)" src="recipe images/lamp recipe.png">
-            <h3>Lamp</h3>
-            <a target="_blank" href="https://bde.gg/u/F0X_jL">@F0X_jL</a>
-        </div>
-        <div class="grid-item" style="background-color: #b0aea1;">
-            <img onclick="openModal(this)" src="recipe images/large candlestick recipe.png">
-            <h3>Large Candlestick</h3>
-            <a target="_blank" href="https://bde.gg/u/F0X_jL">@F0X_jL</a>
-        </div>
-        <div class="grid-item" style="background-color: #95d478;">
-            <img onclick="openModal(this)" src="recipe images/little creeper recipe.png">
-            <h3>Little Creeper</h3>
-            <a target="_blank" href="https://bde.gg/u/fluffa01">@fluffa01</a>
-        </div>
-        <div class="grid-item" style="background-color: #702e2e;">
-            <img onclick="openModal(this)" src="recipe images/magma block potion recipe.png">
-            <h3>Magma Block Potion</h3>
-            <a target="_blank" href="https://bde.gg/u/Kromakur">@Kromakur</a>
-        </div>
-        <div class="grid-item" style="background-color: #2e4370;">
-            <img onclick="openModal(this)" src="recipe images/sculk potion recipe.png">
-            <h3>Sculk Potion</h3>
-            <a target="_blank" href="https://bde.gg/u/Kromakur">@Kromakur</a>
-        </div>
-        <div class="grid-item" style="background-color: #3d702e;">
-            <img onclick="openModal(this)" src="recipe images/slime block potion recipe.png">
-            <h3>Slime Block Potion</h3>
-            <a target="_blank" href="https://bde.gg/u/Kromakur">@Kromakur</a>
-        </div>
-        <div class="grid-item" style="background-color: #696760;">
-            <img onclick="openModal(this)" src="recipe images/round barrel recipe.png">
-            <h3>Round Barrel</h3>
-            <a target="_blank" href="https://bde.gg/u/daftcraft">@DaftCraftYT</a>
-        </div>
-        <div class="grid-item" style="background-color: #b3b3b3;">
-            <img onclick="openModal(this)" src="recipe images/sitting skeleton recipe.png">
-            <h3>Sitting Skeleton</h3>
-            <a target="_blank" href="https://bde.gg/u/midav">@Miiidav</a>
-        </div>
-        <div class="grid-item" style="background-color: #ddbee5;">
-            <img onclick="openModal(this)" src="recipe images/telescope recipe.png">
-            <h3>Telescope</h3>
-            <a target="_blank" href="https://bde.gg/u/almazar/">@AlmazAr3</a>
-        </div>
-        <div class="grid-item" style="background-color: #45564f;">
-            <img onclick="openModal(this)" src="recipe images/trash can recipe.png">
-            <h3>Trash Can</h3>
-            <a target="_blank" href="https://bde.gg/u/Rasterio_/">@Rasterio_</a>
-        </div>
-        <div class="grid-item" style="background-color: #545645;">
-            <img onclick="openModal(this)" src="recipe images/window barricades recipe.png">
-            <h3>Window Barricades</h3>
-            <a target="_blank" href="https://bde.gg/u/luiginhoyt">@KRiSinnit</a>
-        </div>
-        <div class="grid-item" style="background-color: #41381c;">
-            <img onclick="openModal(this)" src="recipe images/wooden beer mug.png">
-            <h3>Wooden Beer Mug</h3>
-            <a target="_blank" href="https://bde.gg/u/shard">@shard</a>
-        </div>
-        <div class="grid-item" style="background-color: #26411c;">
-            <img onclick="openModal(this)" src="recipe images/tiny tree recipe.png">
-            <h3>Tiny Tree</h3>
-            <a target="_blank" href="https://bde.gg/u/lerocher44">@LeRocher44</a>
-        </div>
-        <div class="grid-item" style="background-color: #878a8e;">
-            <img onclick="openModal(this)" src="recipe images/rocks recipe.png">
-            <h3>Rocks</h3>
-            <a target="_blank" href="https://bde.gg/u/Deadtale">@Deadtale2659</a>
-        </div>
-        <div class="grid-item" style="background-color: #6b262b;">
-            <img onclick="openModal(this)" src="recipe images/red clock recipe.png">
-            <h3>Red Clock</h3>
-            <a target="_blank" href="https://zolmik.bde.gg">@__ZolMik__</a>
-        </div>
-        <div class="grid-item" style="background-color: #453233;">
-            <img onclick="openModal(this)" src="recipe images/punching bag recipe.png">
-            <h3>Punching Bag</h3>
-            <a target="_blank" href="https://bde.gg/u/Dewox">@Dewox</a>
-        </div>
-        <div class="grid-item" style="background-color: #44626a;">
-            <img onclick="openModal(this)" src="recipe images/globe recipe.png">
-            <h3>Globe</h3>
-            <a target="_blank" href="https://bde.gg/u/shard">@shard</a>
-        </div>
-        <div class="grid-item" style="background-color: #c87055;">
-            <img onclick="openModal(this)" src="recipe images/fake herobrine recipe.png">
-            <h3>Fake Herobrine</h3>
-            <a target="_blank" href="https://bde.gg/u/Mastay">@Mastay</a>
-        </div>
-        <div class="grid-item" style="background-color: #645846;">
-            <img onclick="openModal(this)" src="recipe images/chess board recipe.png">
-            <h3>Chess Board</h3>
-            <a target="_blank" href="https://zolmik.bde.gg">@__ZolMik__</a>
-        </div>
-    </div>
-    <!-- Modal -->
-    <div class="modal" id="imageModal">
-        <span class="modal-close" onclick="closeModal()">&times;</span>
-        <img id="modalImage" src="" alt="Preview">
-    </div>
+    <header>
+        <nav>
+            <strong>Halloween Decorations Datapack</strong>
+            <ul><a href="https://yoavtc.work" target="_blank">yoavtc.work</a></ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Links</h2>
+            <div id="download-links-grid">
+                <div class="download-link"><img src="icons/modrinth.webp"><a href="https://modrinth.com/datapack/halloween-decorations" target="_blank">Modrinth</a></div>
+                <div class="download-link"><img src="icons/curseforge.webp"><a target="_blank">CurseForge</a></div>
+                <div class="download-link"><img src="icons/planetminecraft.webp"><a target="_blank">PlanetMinecraft</a></div>
+                <div class="download-link"><img src="icons/github.webp"><a href="https://github.com/YoavTC/deco-plus" target="_blank">GitHub</a></div>
+                <div class="download-link"><img src="icons/youtube.webp"><a>YouTube</a target="_blank"></div>
+            </div>
+        </section>
 
-    <script>
-        // Open modal and display the clicked image
-        function openModal(image) {
-            const modal = document.getElementById('imageModal');
-            const modalImage = document.getElementById('modalImage');
-            modalImage.src = image.src; // Use the same image source
-            modal.style.display = 'flex';
-        }
-
-        // Close the modal
-        function closeModal() {
-            const modal = document.getElementById('imageModal');
-            modal.style.display = 'none';
-        }
-
-        // Sort grid items alphabetically by their <h3> text
-        document.addEventListener('DOMContentLoaded', () => {
-            const gridContainer = document.querySelector('.grid-container');
-            const gridItems = Array.from(gridContainer.children);
-
-            // Sort the items based on the text content of <h3>
-            gridItems.sort((a, b) => {
-                const textA = a.querySelector('h3').textContent.toLowerCase();
-                const textB = b.querySelector('h3').textContent.toLowerCase();
-                return textA.localeCompare(textB);
-            });
-
-            // Append the sorted items back to the container
-            gridItems.forEach(item => gridContainer.appendChild(item));
-        });
-    </script>
+        <section id="collection">
+            <h2>Recipe Gallery</h2>
+            <div class="recipe-list">
+                <figure>
+                    <img src="recipe%20images/bloody_axe.png" alt="Bloody Axe crafting recipe and preview">
+                    <figcaption>
+                        <h3>Bloody Axe</h3>
+                        <p>Evoker523</p>
+                        <a href="https://bde.gg/b/7784" target="_blank" rel="noopener">https://bde.gg/b/7784</a>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="recipe%20images/bloody_pickaxe.png" alt="Bloody Pickaxe crafting recipe and preview">
+                    <figcaption>
+                        <h3>Bloody Pickaxe</h3>
+                        <p>BlueBlueBlood</p>
+                        <a href="https://bde.gg/b/10522" target="_blank" rel="noopener">https://bde.gg/b/10522</a>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="recipe%20images/bloody_sword.png" alt="Bloody Sword crafting recipe and preview">
+                    <figcaption>
+                        <h3>Bloody Sword</h3>
+                        <p>BlueBlueBlood</p>
+                        <a href="https://bde.gg/b/10517" target="_blank" rel="noopener">https://bde.gg/b/10517</a>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="recipe%20images/enchanted_books.png" alt="Enchanting Books crafting recipe and preview">
+                    <figcaption>
+                        <h3>Enchanting Books</h3>
+                        <p>HaniVindinggame</p>
+                        <a href="https://bde.gg/b/39963" target="_blank" rel="noopener">https://bde.gg/b/39963</a>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="recipe%20images/halloween_cart.png" alt="Halloween Cart crafting recipe and preview">
+                    <figcaption>
+                        <h3>Halloween Cart</h3>
+                        <p>Daniya</p>
+                        <a href="https://bde.gg/b/5025" target="_blank" rel="noopener">https://bde.gg/b/5025</a>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="recipe%20images/mummy.png" alt="Mummy crafting recipe and preview">
+                    <figcaption>
+                        <h3>Mummy</h3>
+                        <p>Yoav TC</p>
+                        <a href="https://bde.gg/b/116191" target="_blank" rel="noopener">https://bde.gg/b/116191</a>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="recipe%20images/poison_bottle.png" alt="Poison Bottle crafting recipe and preview">
+                    <figcaption>
+                        <h3>Poison Bottle</h3>
+                        <p>AHDPEY</p>
+                        <a href="https://bde.gg/b/86290" target="_blank" rel="noopener">https://bde.gg/b/86290</a>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="recipe%20images/pumpkin_box.png" alt="Pumpkin Box crafting recipe and preview">
+                    <figcaption>
+                        <h3>Pumpkin Box</h3>
+                        <p>__ZolMik__</p>
+                        <a href="https://bde.gg/b/21403" target="_blank" rel="noopener">https://bde.gg/b/21403</a>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="recipe%20images/raven.png" alt="Raven crafting recipe and preview">
+                    <figcaption>
+                        <h3>Raven</h3>
+                        <p>VoidSplit1 (modified)</p>
+                        <a href="https://bde.gg/b/959" target="_blank" rel="noopener">https://bde.gg/b/959</a>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="recipe%20images/scarecrow.png" alt="Scarecrow crafting recipe and preview">
+                    <figcaption>
+                        <h3>Scarecrow</h3>
+                        <p>DaftCraftYT</p>
+                        <a href="https://bde.gg/b/953" target="_blank" rel="noopener">https://bde.gg/b/953</a>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="recipe%20images/skeleton_corpse.png" alt="Skeleton Corpse crafting recipe and preview">
+                    <figcaption>
+                        <h3>Skeleton Corpse</h3>
+                        <p>Miiidav</p>
+                        <a href="https://bde.gg/b/33995" target="_blank" rel="noopener">https://bde.gg/b/33995</a>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="recipe%20images/skull_in_jar.png" alt="Skull in Jar crafting recipe and preview">
+                    <figcaption>
+                        <h3>Skull in Jar</h3>
+                        <p>Ya_Brutal</p>
+                        <a href="https://bde.gg/b/57799" target="_blank" rel="noopener">https://bde.gg/b/57799</a>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="recipe%20images/soul_skull.png" alt="Soul Skull crafting recipe and preview">
+                    <figcaption>
+                        <h3>Soul Skull</h3>
+                        <p>Ohad Dori</p>
+                        <a href="https://github.com/OhadDori" target="_blank" rel="noopener">https://github.com/OhadDori</a>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="recipe%20images/stone_grave.png" alt="Stone Grave crafting recipe and preview">
+                    <figcaption>
+                        <h3>Stone Grave</h3>
+                        <p>ItzDuck_</p>
+                        <a href="https://bde.gg/b/22399" target="_blank" rel="noopener">https://bde.gg/b/22399</a>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="recipe%20images/witch_hat.png" alt="Witch Hat crafting recipe and preview">
+                    <figcaption>
+                        <h3>Witch Hat</h3>
+                        <p>__ZolMik__</p>
+                        <a href="https://bde.gg/b/21904" target="_blank" rel="noopener">https://bde.gg/b/21904</a>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="recipe%20images/witch_pot.png" alt="Witch Pot crafting recipe and preview">
+                    <figcaption>
+                        <h3>Witch Pot</h3>
+                        <p>mrserluiz</p>
+                        <a href="https://bde.gg/b/37139" target="_blank" rel="noopener">https://bde.gg/b/37139</a>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="recipe%20images/wooden_grave.png" alt="Wooden Grave crafting recipe and preview">
+                    <figcaption>
+                        <h3>Wooden Grave</h3>
+                        <p>Giga71</p>
+                        <a href="https://bde.gg/b/39437" target="_blank" rel="noopener">https://bde.gg/b/39437</a>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="recipe%20images/zombie_corpse.png" alt="Zombie Corpse crafting recipe and preview">
+                    <figcaption>
+                        <h3>Zombie Corpse</h3>
+                        <p>Muldek</p>
+                        <a href="https://bde.gg/b/39589" target="_blank" rel="noopener">https://bde.gg/b/39589</a>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="recipe%20images/spine.png" alt="Spine crafting recipe and preview">
+                    <figcaption>
+                        <h3>Spine</h3>
+                        <p>Ohad Dori</p>
+                        <a href="https://github.com/OhadDori" target="_blank" rel="noopener">https://github.com/OhadDori</a>
+                    </figcaption>
+                </figure>
+            </div>
+        </section>
+    </main>
 </body>
 </html>

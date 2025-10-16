@@ -1,0 +1,77 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:player_head",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:profile": {
+                  "properties": [
+                    {
+                      "name": "textures",
+                      "value": "ewogICJ0aW1lc3RhbXAiIDogMTc2MDYxNjA3MjI2MSwKICAicHJvZmlsZUlkIiA6ICJmZDlhMmNhNGNhMWM0YTkwYWEyODkyNThkYmM3MmFiNSIsCiAgInByb2ZpbGVOYW1lIiA6ICJJRnJhbmtvWCIsCiAgInNpZ25hdHVyZVJlcXVpcmVkIiA6IHRydWUsCiAgInRleHR1cmVzIiA6IHsKICAgICJTS0lOIiA6IHsKICAgICAgInVybCIgOiAiaHR0cDovL3RleHR1cmVzLm1pbmVjcmFmdC5uZXQvdGV4dHVyZS8zNDM4YWUwMWFjOTNjN2I5MjVhZjA5MGUyZDE2NTQ1NjVkNWZhMTA3ZDZjNjFmNDFlZmQxNWI3NDczZTBhMDI1IgogICAgfQogIH0KfQ=="
+                    }
+                  ]
+                },
+                "minecraft:attribute_modifiers": [
+                  {
+                    "type": "minecraft:block_interaction_range",
+                    "id": "block_interaction_range",
+                    "amount": -5,
+                    "operation": "add_multiplied_total",
+                    "slot": "hand"
+                  }
+                ],
+                "minecraft:tooltip_display": {
+                  "hidden_components": [
+                    "minecraft:attribute_modifiers"
+                  ]
+                },
+                "minecraft:equippable": {
+                  "slot": "chest",
+                  "equip_sound": "minecraft:ui.cartography_table.take_result",
+                  "allowed_entities": "minecraft:armor_stand"
+                },
+                "minecraft:custom_data": {
+                  "deco": true,
+                  "deco_id": "broom",
+                  "deco_width": 1.25,
+                  "deco_height": 2.0
+                },
+                "minecraft:custom_name": {
+                  "text": "Broom Decoration",
+                  "color": "#ffbf00",
+                  "bold": false,
+                  "italic": false
+                },
+                "minecraft:lore": [
+                  [
+                    {
+                      "text": "Model by Rovoni_",
+                      "color": "dark_gray",
+                      "bold": false,
+                      "italic": false
+                    }
+                  ],
+                  [
+                    {
+                      "text": "bde.gg/b/30769",
+                      "color": "dark_gray",
+                      "bold": false,
+                      "italic": false
+                    }
+                  ]
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

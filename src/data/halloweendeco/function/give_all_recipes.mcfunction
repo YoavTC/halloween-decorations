@@ -22,3 +22,4 @@ recipe give @a halloweendeco:spider
 recipe give @a halloweendeco:broom
 recipe give @a halloweendeco:candy_pumpkin
 recipe give @a halloweendeco:bone_pile
+recipe give @a halloweendeco:coffin

@@ -1,0 +1,76 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "#": "minecraft:stripped_mangrove_wood",
+    "A": "minecraft:gold_ingot"
+  },
+  "pattern": [
+    "###",
+    "#A#",
+    " # "
+  ],
+  "result": {
+    "components": {
+      "minecraft:profile": {
+        "properties": [
+          {
+            "name": "textures",
+            "value": "ewogICJ0aW1lc3RhbXAiIDogMTc1MDg3Nzk1NTk2MiwKICAicHJvZmlsZUlkIiA6ICIzOWEzOTMzZWE4MjU0OGU3ODQwNzQ1YzBjNGY3MjU2ZCIsCiAgInByb2ZpbGVOYW1lIiA6ICJkZW1pbmVjcmFmdGVybG9sIiwKICAic2lnbmF0dXJlUmVxdWlyZWQiIDogdHJ1ZSwKICAidGV4dHVyZXMiIDogewogICAgIlNLSU4iIDogewogICAgICAidXJsIiA6ICJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzM1YjQ4ODQ2NTAwYWY2NGFkN2QyOWJlNmE3YmE3ZjQ2ZjFiY2NiZTBhMDVhNzU5NmRhODA1MGJiY2RiMDVlYzciLAogICAgICAibWV0YWRhdGEiIDogewogICAgICAgICJtb2RlbCIgOiAic2xpbSIKICAgICAgfQogICAgfQogIH0KfQ=="
+          }
+        ]
+      },
+      "minecraft:attribute_modifiers": [
+        {
+          "type": "minecraft:block_interaction_range",
+          "id": "block_interaction_range",
+          "amount": -5,
+          "operation": "add_multiplied_total",
+          "slot": "hand"
+        }
+      ],
+      "minecraft:tooltip_display": {
+        "hidden_components": [
+          "minecraft:attribute_modifiers"
+        ]
+      },
+      "minecraft:equippable": {
+        "slot": "chest",
+        "equip_sound": "minecraft:ui.cartography_table.take_result",
+        "allowed_entities": "minecraft:armor_stand"
+      },
+      "minecraft:custom_data": {
+        "deco": true,
+        "deco_id": "coffin",
+        "deco_width": 2.0,
+        "deco_height": 1.0
+      },
+      "minecraft:custom_name": {
+        "text": "Coffin Decoration",
+        "color": "#ffbf00",
+        "bold": false,
+        "italic": false
+      },
+      "minecraft:lore": [
+        [
+          {
+            "text": "Model by Ohad Dori",
+            "color": "dark_gray",
+            "bold": false,
+            "italic": false
+          }
+        ],
+        [
+          {
+            "text": "github.com/OhadDori",
+            "color": "dark_gray",
+            "bold": false,
+            "italic": false
+          }
+        ]
+      ]
+    },
+    "count": 1,
+    "id": "minecraft:player_head"
+  },
+  "show_notification": false
+}

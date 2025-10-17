@@ -24,3 +24,6 @@ recipe give @a halloweendeco:candy_pumpkin
 recipe give @a halloweendeco:bone_pile
 recipe give @a halloweendeco:coffin
 recipe give @a halloweendeco:zombie_rising
+recipe give @a halloweendeco:husk_rising
+recipe give @a halloweendeco:creeper_rising
+recipe give @a halloweendeco:drowned_rising

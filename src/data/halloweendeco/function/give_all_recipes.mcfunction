@@ -23,3 +23,4 @@ recipe give @a halloweendeco:broom
 recipe give @a halloweendeco:candy_pumpkin
 recipe give @a halloweendeco:bone_pile
 recipe give @a halloweendeco:coffin
+recipe give @a halloweendeco:zombie_rising

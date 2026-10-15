@@ -2,7 +2,7 @@
 	"pack": {
 		"description": [
 			{
-				"text": "Made by Yoav TC\n",
+				"text": "halloween-decorations v1.3\n",
 				"color": "dark_gray"
 			},
 			{
@@ -11,12 +11,7 @@
 				"underlined": true
 			}
 		],
-		"pack_format": 71,
-		"min_format": 71,
-		"max_format": 88,
-		"supported_formats": [
-			71,
-			88
-		]
+		"min_format": 121,
+		"max_format": 121
 	}
 }

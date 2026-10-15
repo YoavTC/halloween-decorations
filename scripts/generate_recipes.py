@@ -18,16 +18,16 @@ def recipe_output_to_loot_table(recipe_data):
     functions = []
     if components:
         functions.append({
-            "function": "minecraft:set_components",
+            "type": "minecraft:set_components",
             "components": components
         })
     if item_count > 1:
         functions.append({
-            "function": "minecraft:set_count",
+            "type": "minecraft:set_count",
             "count": item_count
         })
     if functions:
-        entry["functions"] = functions
+        entry["modifier"] = functions
 
     loot_table = {
         "pools": [

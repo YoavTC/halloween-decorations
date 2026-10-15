@@ -1,0 +1,78 @@
+name: Create Release
+
+on:
+  workflow_dispatch:
+    inputs:
+      release_version:
+        description: 'Release version (e.g. 1.1)'
+        required: true
+        type: string
+      minecraft_versions:
+        description: 'Supported Minecraft versions (e.g. 26.1 or 26.2-26.3)'
+        required: true
+        type: string
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    env:
+      REPO_NAME: ${{ github.event.repository.name }}
+      RELEASE_VERSION: ${{ inputs.release_version }}
+      MINECRAFT_VERSIONS: ${{ inputs.minecraft_versions }}
+      GH_TOKEN: ${{ github.token }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install beet
+        run: pip install beet
+
+      - name: Update pack.mcmeta description
+        run: |
+          jq --tab --arg text "$REPO_NAME v$RELEASE_VERSION"$'\n' \
+            '.pack.description[0].text = $text' \
+            src/pack.mcmeta > pack.mcmeta.tmp
+          mv pack.mcmeta.tmp src/pack.mcmeta
+          cat src/pack.mcmeta
+
+      - name: Commit pack.mcmeta update
+        run: |
+          if git diff --quiet -- src/pack.mcmeta; then
+            echo "pack.mcmeta already at v$RELEASE_VERSION, nothing to commit"
+          else
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add src/pack.mcmeta
+            git commit -m "Release v$RELEASE_VERSION"
+            git push origin "HEAD:${{ github.ref_name }}"
+          fi
+          echo "RELEASE_SHA=$(git rev-parse HEAD)" >> "$GITHUB_ENV"
+
+      - name: Build pack
+        run: |
+          beet build -j > build.json
+          jq -e '.status == "success"' build.json > /dev/null
+
+      - name: Extract data pack zip
+        run: |
+          ASSET_NAME="${REPO_NAME}_v${RELEASE_VERSION}_MC${MINECRAFT_VERSIONS}.zip"
+          ASSET_NAME="${ASSET_NAME// /_}"
+          jq -r '.data_pack.zip' build.json | base64 -d > "$ASSET_NAME"
+          unzip -l "$ASSET_NAME"
+          echo "ASSET_NAME=$ASSET_NAME" >> "$GITHUB_ENV"
+
+      - name: Publish GitHub release
+        run: |
+          gh release create "v$RELEASE_VERSION" \
+            "$ASSET_NAME" \
+            --target "$RELEASE_SHA" \
+            --title "$REPO_NAME v$RELEASE_VERSION" \
+            --notes "Supports Minecraft $MINECRAFT_VERSIONS"
